@@ -2,7 +2,7 @@
     "name": "vsc-fengjx",
     "displayName": "vsc-fengjx",
     "description": "my vscode extension",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "fengjx",
     "engines": {
         "vscode": "^1.6.0"
@@ -21,7 +21,6 @@
         "mads-hartmann.bash-ide-vscode",
         "ms-ceintl.vscode-language-pack-zh-hans",
         "vmware.vscode-manifest-yaml",
-        "streetsidesoftware.code-spell-checker",
         "adpyke.codesnap",
         "vunguyentuan.vscode-css-variables",
         "ms-vscode-remote.remote-containers",
@@ -41,7 +40,6 @@
         "christian-kohler.path-intellisense",
         "esbenp.prettier-vscode",
         "ms-python.vscode-pylance",
-        "ms-python.python",
         "ms-python.debugpy",
         "msjsdiag.vscode-react-native",
         "ms-vscode-remote.remote-ssh",
@@ -621,6 +619,11 @@
                 "key": "alt+shift+up",
                 "command": "editor.action.smartSelect.expand",
                 "when": "editorTextFocus"
+            },
+            {
+                "key": "ctrl+g",
+                "command": "references-view.findReferences",
+                "when": "editorHasReferenceProvider"
             }
         ]
     },
