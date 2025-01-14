@@ -267,7 +267,7 @@
             "})"
         ]
     },
-    "NewContext": {
+    "newContext": {
         "prefix": "nc",
         "body": [
             "// ${1:name}Key is a private context key.",
@@ -284,5 +284,22 @@
             "  return v, ok",
             "}",
         ]
-    }
+    },
+    "newSingle": {
+        "prefix": "new-single",
+        "description": "flat dating new single instance",
+        "body": [
+            "// ${1:Name} ${2:description}",
+            "type ${1:Name} struct {",
+            "}",
+            "",
+            "var m${1:Name} bconf.Single[${1:Name}]",
+            "",
+            "func Get${1:Name}() *${1:Name} {",
+            "\treturn m${1:Name}.Get(func() *${1:Name} {",
+            "\t\treturn &${1:Name}{}",
+            "\t})",
+            "}"
+        ]
+    },
 }

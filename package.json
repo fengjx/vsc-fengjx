@@ -2,7 +2,7 @@
     "name": "vsc-fengjx",
     "displayName": "vsc-fengjx",
     "description": "my vscode extension",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "fengjx",
     "engines": {
         "vscode": "^1.6.0"
@@ -101,10 +101,10 @@
                 "command": "workbench.action.findInFiles"
             },
             {
-                "mac": "cmd+shift+f",
-                "win": "ctrl+shift+f",
-                "linux": "ctrl+shift+f",
-                "key": "ctrl+shift+f",
+                "mac": "alt+shift+f",
+                "win": "alt+shift+f",
+                "linux": "alt+shift+f",
+                "key": "alt+shift+f",
                 "command": "workbench.action.findInFiles"
             },
             {
@@ -404,18 +404,18 @@
                 "when": "editorTextFocus"
             },
             {
-                "mac": "cmd+shift+x",
-                "win": "ctrl+shift+x",
-                "linux": "ctrl+shift+x",
-                "key": "ctrl+shift+x",
+                "mac": "cmd+shift+u",
+                "win": "ctrl+shift+u",
+                "linux": "ctrl+shift+u",
+                "key": "ctrl+shift+u",
                 "command": "editor.action.transformToUppercase",
                 "when": "editorTextFocus"
             },
             {
-                "mac": "cmd+shift+y",
-                "win": "ctrl+shift+y",
-                "linux": "ctrl+shift+y",
-                "key": "ctrl+shift+y",
+                "mac": "cmd+shift+l",
+                "win": "ctrl+shift+l",
+                "linux": "ctrl+shift+l",
+                "key": "ctrl+shift+l",
                 "command": "editor.action.transformToLowercase",
                 "when": "editorTextFocus"
             },
